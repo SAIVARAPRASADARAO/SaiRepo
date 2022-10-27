@@ -18,18 +18,18 @@ Items: any;
   getData(){
   return[
     {
-    "ProductId":1,
-    "ProductName":"Fridge",
-    "ProductCode":"5555",
-    "ProductDate":"datetime",
-    "ProductDescription": "ALL Products are good",
+    "PizzaId":1,
+    "PizzaName":"Fridge",
+    "PizzaCode":"5555",
+    "PizzaDate":"datetime",
+    "PizzaDescription": "ALL Products are good",
   },
   {
-    "ProductId":2,
-    "ProductName":"Fan",
-    "ProductCode":"595959",
-    "ProductDate":"datetime",
-    "ProductDescription": "ALL Products are Great",
+    "PizzaId":2,
+    "PizzaName":"Fan",
+    "PizzaCode":"595959",
+    "PizzaDate":"datetime",
+    "PizzaDescription": "ALL Products are Great",
   }
   ];
   
