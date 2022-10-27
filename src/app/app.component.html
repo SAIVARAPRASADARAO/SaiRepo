@@ -2,9 +2,9 @@
   
   <h1><span>Welcome to {{title}}</span></h1>
 
-  <div *ngFor="let item of Items">
+  <div *ngFor="let item of Items;index as i">
     <div *ngFor="let price of Prices" ></div>
-    <table><tr><td>{{item}}</td><td>{{Prices}}</td></tr></table>
+    <table><tr><td>{{i}} {{item}}</td><td>{{Prices}}</td></tr></table>
   </div>
  
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
