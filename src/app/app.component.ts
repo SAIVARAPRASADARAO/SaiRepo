@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'My first App myapp1';
-  names=['April','Julie','Rocky','John','Michael','Jordan'];
+  Items=['Fridge','Fan','Mixer','Television','Sofa','Chair'];
+  Prices=['$10','$50','$100','$200','$500','$600'];
 }

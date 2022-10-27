@@ -1,11 +1,11 @@
 
   
   <h1><span>Welcome to {{title}}</span></h1>
-  <span>Welcome to {{names}}</span>
 
-  <mat-toolbar>
-Menu 
-  </mat-toolbar>
+  <div *ngFor="let item of Items">
+    <div *ngFor="let price of Prices" ></div>
+    <table><tr><td>{{item}}</td><td>{{Prices}}</td></tr></table>
+  </div>
  
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
