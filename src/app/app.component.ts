@@ -19,14 +19,14 @@ Items: any;
   return[
     {
     "PizzaId":1,
-    "PizzaName":"Fridge",
+    "PizzaName":"cheese",
     "PizzaCode":"5555",
     "PizzaDate":"datetime",
     "PizzaDescription": "ALL Products are good",
   },
   {
     "PizzaId":2,
-    "PizzaName":"Fan",
+    "PizzaName":"peparoni",
     "PizzaCode":"595959",
     "PizzaDate":"datetime",
     "PizzaDescription": "ALL Products are Great",
