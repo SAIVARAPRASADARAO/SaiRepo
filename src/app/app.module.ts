@@ -8,10 +8,15 @@ import{MatSidenavModule} from '@angular/material/sidenav';
 import{MatButtonModule} from '@angular/material/button';
 import{MatIconModule} from '@angular/material/icon';
 import{MatDividerModule} from '@angular/material/divider';
+import { DataTableComponent } from './data-table/data-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DataTableComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +25,10 @@ import{MatDividerModule} from '@angular/material/divider';
     MatSidenavModule,
     MatButtonModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
