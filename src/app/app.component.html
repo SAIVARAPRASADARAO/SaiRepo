@@ -1,10 +1,30 @@
+import {user} from './user';
 
-  
-  <h1><span>Welcome to {{title}}</span></h1>
+<h2>Profile Editor</h2>
+<h3>User Information</h3>
+
+<div *ngif={{displayEdit}} is false>
+<table>
+  <tr><td>name:</td><td><input name="text" value={{name}}/></td></tr>
+  <tr><td>age:</td><td><input name="text" value={{age}}/></td></tr>
+  <tr><td>favourite color:</td><td><input name="text" value={{favoriteColor}}/></td></tr>
+</table>
+</div>
+
+<div *ngif={{displayEdit}} is true>
+  <table>
+    <tr><td>name:</td><td><input name="text" [(ngModel)]="name"/></td></tr>
+    <tr><td>age:</td><td><input name="text" [(ngModel)]="age"/></td></tr>
+    <tr><td>favourite color:</td><td><input name="text" [(ngModel)]="favoriteColor"/></td></tr>
+    <tr><td><input type="button" title="save"/></td><td><input type="button" title="toggleEdit"/></td></tr>
+  </table>
+  </div>
+
+  <!-- <h1><span>Welcome to {{title}}</span></h1>
 
   <div *ngFor="let item of Items;index as i">
-    <!-- <div  ></div>
-    <table><tr *ngFor="let price of Prices"><td>{{i}} {{item}}</td><td>{{Prices}}</td></tr></table> -->
+     <div  ></div>
+    <table><tr *ngFor="let price of Prices"><td>{{i}} {{item}}</td><td>{{Prices}}</td></tr></table> 
   </div>
 
   <table border="1"> 
@@ -15,13 +35,25 @@
       <td>{{f.PizzaDate}}</td>
       <td>{{f.PizzaDescription}}</td>
     </tr>
-  </table>
- 
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+  </table> -->
+<!-- <h1>Profile Editor</h1>
+<h2>User Information</h2> -->
+<!-- <button (click)="toggle()" id="bt">
+  {{buttonName}}
+</button>
 
+<ng-container *ngIf="show">
+  <div style="margin: 0 auto;text-align: left;">
+      <div>
+          <label>Name</label>
+          <div><input id="tbname" name="name" /></div>
+      </div>
+      <div>
+          <label>age</label>
+          <div><input name="age" id="age" /></div></div>
+      <div>
+        <label>favorite Color :</label>
+        <div><input id="favoriteColor" name="favoriteColor " /></div>
+      </div>
+  </div>
+</ng-container> -->

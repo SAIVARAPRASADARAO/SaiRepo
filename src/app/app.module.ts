@@ -12,6 +12,7 @@ import { DataTableComponent } from './data-table/data-table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
